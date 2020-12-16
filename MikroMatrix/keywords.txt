@@ -1,0 +1,12 @@
+MikroMatrix		KEYWORD1
+MAX_7219		KEYWORD2
+Mikrosegapp		KEYWORD2
+MikroMatrixapp		KEYWORD2
+init			KEYWORD2
+set_intensity		KEYWORD2
+set_speed		KEYWORD2
+scroll_left		KEYWORD2
+scroll_right		KEYWORD2
+invtd_scroll_right	KEYWORD2
+invtd_scroll_left	KEYWORD2
+sevseg			KEYWORD2
