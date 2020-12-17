@@ -23,8 +23,8 @@
 
 
 #define CLOCK_PIN 13      // CLK pin of MAX7219 module on arduino UNO Pin no 13
-#define CHIP_SELECT 10    // CLK pin of MAX7219 module on arduino UNO Pin no 10
-#define DATA_PIN 11        // CLK pin of MAX7219 module on arduino UNO Pin no 11
+#define CHIP_SELECT 10    // CHIP_SELECT of MAX7219 module on arduino UNO Pin no 10
+#define DATA_PIN 11        // DATA_PIN pin of MAX7219 module on arduino UNO Pin no 11
 #define NUM_OF_DEVICES 8   //change this variable to set how many MAX7219's you'll use
 
 
