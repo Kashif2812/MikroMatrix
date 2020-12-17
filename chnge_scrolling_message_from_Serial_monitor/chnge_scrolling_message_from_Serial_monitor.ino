@@ -49,6 +49,8 @@ void setup() {
 }
 
 void call_back()     // This is a function called during interruption
+{
+  
 int brightness;      // variable to hold the value of brightness
 int Speed;           // variable to hold the value of speed
 
