@@ -25,7 +25,7 @@
 #define CLOCK_PIN 13      // CLK pin of MAX7219 module on arduino UNO Pin no 13
 #define CHIP_SELECT 10    // CHIP_SELECT of MAX7219 module on arduino UNO Pin no 10
 #define DATA_PIN 11        // DATA_PIN pin of MAX7219 module on arduino UNO Pin no 11
-#define NUM_OF_DEVICES 8   //change this variable to set how many MAX7219's you'll use
+#define NUM_OF_DEVICES 4   //change this variable to set how many MAX7219's you'll use
 
 //MAX_7219 class for LED_Matrix and Seven Segment driver:
 MAX_7219 MAX_7219_MODULE(DATA_PIN, CHIP_SELECT, CLOCK_PIN, NUM_OF_DEVICES);
