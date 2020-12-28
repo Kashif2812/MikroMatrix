@@ -22,28 +22,23 @@
 #include <TimerOne.h>   // include timer library for software interrupt
 
 
-SoftwareSerial BT05(4, 5); //RX|TX
+
 
 #define CLOCK_PIN 13      // CLK pin of MAX7219 module on arduino UNO Pin no 13
 #define CHIP_SELECT 10    // CHIP_SELECT of MAX7219 module on arduino UNO Pin no 10
 #define DATA_PIN 11        // DATA_PIN pin of MAX7219 module on arduino UNO Pin no 11
 #define NUM_OF_DEVICES 4   //change this variable to set how many MAX7219's you'll use
-
-
+#define RX       4
+#define TX       5
 
 
 
 char message[100];
-int num;
+
+SoftwareSerial BT05(RX, TX); //RX|TX
 
 //MAX_7219 class for LED_Matrix and Seven Segment driver:
 MAX_7219 MAX_7219_MODULE(DATA_PIN, CHIP_SELECT, CLOCK_PIN, NUM_OF_DEVICES );
-
-
-
-//Mikrosegapp class for Seven Segment applications
-Mikrosegapp seven_seg(&MAX_7219_MODULE);
-
 
 //MikroMatrixapp class for Seven Segment applications
 MikroMatrixapp Matrix(&MAX_7219_MODULE);
@@ -85,14 +80,6 @@ int Speed;           // variable to hold the value of speed
               MAX_7219_MODULE.set_speed(Speed);   // write the value of Speed in speed setting function
             }
       
-      
-      if (C=='n')     // check that if identifier character is equal to "S"
-            {
-              num=BT05.parseInt();     // then incoming value will be equal to Speed
-              seven_seg.sevseg(num);
-            }
-
-            
 
        // note: For message identifier, use that character you are not using in your message
        
@@ -107,8 +94,6 @@ int Speed;           // variable to hold the value of speed
 
 void loop() { 
 
-
-seven_seg.sevseg(num);
 Matrix. scroll_left(message);
 
 }
