@@ -28,8 +28,8 @@
 #define CHIP_SELECT 10    // CHIP_SELECT of MAX7219 module on arduino UNO Pin no 10
 #define DATA_PIN 11        // DATA_PIN pin of MAX7219 module on arduino UNO Pin no 11
 #define NUM_OF_DEVICES 4   //change this variable to set how many MAX7219's you'll use
-#define RX       4
-#define TX       5
+#define RX       0
+#define TX       1
 
 
 
